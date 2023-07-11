@@ -8,24 +8,25 @@ import Shop from './components/Shop'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
 import Profile from './components/Profile'
-// import { useContext,useEffect } from 'react';
-// import { MyContext } from './MyContext';
+import { useContext,useEffect } from 'react';
+import { MyContext } from './MyContext';
 
 
 function App() {
-// const {cartItems,setCartItems} = useContext(MyContext);
+const {cartItems,setCartItems} = useContext(MyContext);
 
-// useEffect(()=>{
-//   localStorage.setItem("cartitems",JSON.stringify(cartItems));
+useEffect(()=>{
+  const storedCartItems = window.localStorage.getItem('cartitems');
+  if (storedCartItems) {
+    setCartItems(JSON.parse(storedCartItems));
+  }
+}, []);
+
+useEffect(()=>{
+  window.localStorage.setItem('cartitems',JSON.stringify(cartItems));
   
-//  },[cartItems])
+ },[cartItems])
 
-//  useEffect(()=>{
-//    const storedCartItems = localStorage.getItem('cartitems');
-//    if (storedCartItems) {
-//      setCartItems(JSON.parse(storedCartItems));
-//    }
-//  }, []);
 
 
   return (

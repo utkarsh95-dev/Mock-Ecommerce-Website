@@ -11,7 +11,7 @@ import {MyContext} from"../MyContext";
 
 
 const ProductCard = ({id,img,price,title,reviews,rating,desc}) => {
-    const{cartItems,AddItems,setCartItems} = useContext(MyContext);
+    const{cartItems,AddItems} = useContext(MyContext);
 
 
     // useEffect(()=>{

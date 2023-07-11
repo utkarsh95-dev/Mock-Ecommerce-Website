@@ -12,9 +12,9 @@ import { Instagram } from '@mui/icons-material';
 import MailOutlineIcon from '@mui/icons-material/MailOutline'; 
 // import { Link } from "react-router-dom";
 import Navigation2 from "./Navigation2";
-import { useEffect } from "react";
-import { MyContext } from "../MyContext";
-import { useContext } from "react";
+// import { useEffect } from "react";
+// import { MyContext } from "../MyContext";
+// import { useContext } from "react";
 
 const Shop = () => {
   // console.log(cartItems);
