@@ -1,0 +1,9 @@
+.jumbotron-main{
+    height: 500px;
+    width: 100vw;
+}
+
+.jumbotron-main img{
+    width:100%;
+    object-fit: contain;
+}

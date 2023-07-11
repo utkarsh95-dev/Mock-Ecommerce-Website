@@ -1,0 +1,151 @@
+.Navigation2-head{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    /* padding: 20px; */
+    height: 60px;
+    /* opacity: 1; */
+}
+#nav2-logo{
+    width: 65px;
+    border-radius: 50%;
+    margin-top: 5px;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.nav2-options{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    width: 750px;
+}
+
+.nav2-options a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #222;
+    font-weight:bolder;
+}
+
+.nav2-options-acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.nav2-options-acc h2{
+    font-size: 12px;
+    color: #222;
+}
+
+.nav2-options-drop{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.nav2-options-drop h2{
+    font-size: 12px;
+    color: #222;   
+    display: flex;
+    align-items: center;
+}
+
+.nav2-options-drop-sub{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 10px;
+    background-color: #fff;
+    width: 130px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.12);
+    visibility: hidden;
+    z-index: 2;
+}
+
+.nav2-options-drop-sub a{
+    text-decoration: none;
+    line-height: 30px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.nav2-options-drop:hover  .nav2-options-drop-sub {
+    visibility: visible;
+}
+
+.sub-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.sub-sub::after{
+    position: absolute;
+    content:"";
+    width:100%;
+    bottom:10px;
+    height: 2px;
+    background-color: red;
+    left:0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.sub-sub:hover::after{
+    opacity: 1;
+}
+
+.nav2-options-acc::after{
+    position: absolute;
+    content:"";
+    width:100%;
+    bottom:10px;
+    height: 2px;
+    background-color: red;
+    left:0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.nav2-options-acc:hover::after{
+    opacity: 1;
+}
+
+.sub-sub a{
+    display: flex;
+    align-items: center;
+}
+
+.dotted::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    margin-top: 0;
+    background-color: red;
+    border-radius: 50%;
+}
+

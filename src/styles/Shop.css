@@ -1,0 +1,110 @@
+.shop-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-child1{
+    background-color: rgb(124, 172, 220);
+    display: flex;
+    margin: 30px auto;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.head-child2{
+    width: 100vw;
+    display: flex;
+}
+
+.head-child2 div{
+    display: flex;
+    
+    align-items: center;
+    width: 25%;
+}
+
+.head-child2 div span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-main-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100vw;
+}
+
+.intro-footer{
+    display: flex;
+    background-color: #111;
+    color:#eee;
+    width: 100vw;
+}
+
+.intro-footer-1{
+display: flex;
+flex-direction: column;
+width: 25vw;
+}
+
+.intro-footer-1 > h1{
+margin: 20px auto;
+}
+.intro-footer-2{
+width: 25vw;
+}
+
+.intro-footer-3{
+width: 25vw;
+position: relative;
+}
+
+.intro-footer-4{
+    width: 25vw;
+}
+
+footer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.intro-footer-3 > span > p{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.intro-footer-3 > span{
+    margin-left: 0;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -34px;
+}
+
+.intro-foo-head{
+    position: relative;
+}
+
+.intro-foo-head::after{
+    position: absolute;
+    content:"";
+    width:40%;
+    bottom:0px;
+    height: 2px;
+    background-color: #eee;
+    left:0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+.intro-foo-head:hover::after{
+    opacity: 1;
+}

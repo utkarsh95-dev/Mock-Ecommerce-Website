@@ -1,0 +1,147 @@
+
+.signin-head{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    overflow-x: hidden;
+    position: relative;
+    padding: 0;
+}
+.sign-console{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sign-console1{
+    width: 50%;
+}
+
+.sign-console1 > img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px; /* Gap between grid items */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top:10px;
+}
+  
+  .grid-form > span {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid-form label {
+    margin-bottom: 5px;
+    /* margin-left: 200px; */
+  }
+  
+  .grid-form input[type="submit"] {
+    height: 36px;
+    padding: 5px 10px;
+    margin-left:25px;
+    width: 250px;
+    grid-column: 1; /* Place the submit button in the first column */
+    background-color: blue;
+    color: #fff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:14px;
+    cursor: pointer;
+  }
+
+  .grid-form input{
+    width:300px;
+    margin-bottom: 50px;
+    height: 24px;
+    border-radius: 2x;
+    outline: auto;
+    /* margin-left: 200px; */
+  }
+
+  
+.sign-in{
+  box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.12);
+  width: 500px;
+  margin-left: 50px;
+  place-items: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  height: 100vh;
+  position: relative;
+}
+
+.grid-form input[type="submit"]:hover {
+  background-color: rgb(85, 85, 251);
+  color: #ddd;
+}
+
+.abs-sign-in{
+  position: absolute;
+  margin-top: -490px;
+  margin-left: -639px;
+  color: rgb(33, 94, 225);
+  font-size: 28px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.abs-forg{
+  position: absolute;
+  margin-left: -470px;
+  margin-top:200px;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.signin-goog{
+  position: absolute;
+  margin-left: -678px;
+  margin-top:450px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.signin-line{
+  height: 5px;
+  width: 500px;
+  background-color: #111;
+  position: absolute;
+  margin-left: -698px;
+  margin-top:450px;
+}
+
+.signin-meth-abs{
+  position: absolute;
+  display: flex;
+  margin-left: -670px;
+  margin-top:490px;
+
+}
+
+.error-name{
+  position: absolute;
+  margin-top: 60px;
+  color: red;
+}
+
+.error-email{
+  position: absolute;
+  margin-top: 170px;
+  color: red;
+}
+
+.error-password{
+  position: absolute;
+  margin-top:280px;
+  color:red;
+  
+}

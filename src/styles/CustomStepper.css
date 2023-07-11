@@ -1,0 +1,8 @@
+.custom-stepper {
+  margin-top: 20px; /* Increase the distance between steps */
+}
+
+.custom-stepper .MuiStepConnector-line {
+  transform-origin: top;
+  flex-grow: 1; /* Lengthen the connecting lines */
+}

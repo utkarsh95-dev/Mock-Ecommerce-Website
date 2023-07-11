@@ -1,0 +1,48 @@
+import './App.css'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './components/Home'
+import Cart from './components/Cart'
+import CheckOut from './components/CheckOut'
+import Intro from './components/Intro'
+import Shop from './components/Shop'
+import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
+import Profile from './components/Profile'
+// import { useContext,useEffect } from 'react';
+// import { MyContext } from './MyContext';
+
+
+function App() {
+// const {cartItems,setCartItems} = useContext(MyContext);
+
+// useEffect(()=>{
+//   localStorage.setItem("cartitems",JSON.stringify(cartItems));
+  
+//  },[cartItems])
+
+//  useEffect(()=>{
+//    const storedCartItems = localStorage.getItem('cartitems');
+//    if (storedCartItems) {
+//      setCartItems(JSON.parse(storedCartItems));
+//    }
+//  }, []);
+
+
+  return (
+    <Router>
+      
+      <Routes>
+        <Route  path="/" element={<Home/>}/>
+        <Route  path="/cart" element={<Cart/>} />
+        <Route  path="/checkout" element={<CheckOut/>}/>
+        <Route  path="/intro" element={<Intro/>}/>
+        <Route  path="/shop" element={<Shop/>}/>
+        <Route  path="/signin" element={<SignIn/>}/>
+        <Route  path="/signup" element={<SignUp/>}/>
+        <Route  path="/account" element={<Profile/>}/>
+      </Routes>
+    </Router>
+  )
+}
+
+export default App
