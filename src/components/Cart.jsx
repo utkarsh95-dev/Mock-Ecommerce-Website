@@ -15,7 +15,7 @@ const Cart = () => {
    let TotalItems = Object.values(cartItems).reduce((acc,curr)=>{
       return acc += curr;
     },0)
-
+ 
     let newest=[]
     for(let item in cartItems){
       if (cartItems[item] >0){

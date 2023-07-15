@@ -9,7 +9,9 @@ import Logo from '../assets/logo.png';
 import '../styles/Navigation.css';
 import { MyContext } from '../MyContext';
 import { useContext } from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
+import Avatar from '@mui/material/Avatar';
+
 
 const Navigation = () => {
   // const targRef = useRef(null);
@@ -31,13 +33,13 @@ const Navigation = () => {
   //     }
   //   })
   // },[])
-  const{loggedIn,setLoggedIn} = useContext(MyContext);
+  const{loggedIn} = useContext(MyContext);
 
-  useEffect(()=>{
-    let log = localStorage.getItem("isloggedin");
-        setLoggedIn(JSON.parse(log));
-        console.log(loggedIn)
-  },[loggedIn])
+  // useEffect(()=>{
+  //   let log = localStorage.getItem("isloggedin");
+  //       setLoggedIn(JSON.parse(log));
+  //       console.log(loggedIn)
+  // },[loggedIn])
 
   return (
     <div className='Navigation-head'  id="navz">
@@ -64,7 +66,7 @@ const Navigation = () => {
         </div>
         <div className="nav-options-acc">
           {loggedIn ? <h2>PROFILE</h2>:<h2>SIGN IN</h2>}
-          <Link to={loggedIn?"/account":"/signin"}><AccountCircleIcon sx={{fontSize:"25px", color:"black"}}/></Link>
+          <Link to={loggedIn?"/account":"/signin"}>{loggedIn? <Avatar sx={{ bgcolor:'green',fontSize:"12px",width:28,height:28,marginLeft:"5px" }}>U</Avatar>  :<AccountCircleIcon sx={{fontSize:"25px", color:"black"}}/>}</Link>
         </div>
       </div>
     </div>

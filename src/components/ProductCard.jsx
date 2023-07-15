@@ -4,37 +4,9 @@ import { useContext } from "react";
 import '../styles/ProductCard.css';
 import {MyContext} from"../MyContext";
 
-
-
-
-
-
-
 const ProductCard = ({id,img,price,title,reviews,rating,desc}) => {
     const{cartItems,AddItems} = useContext(MyContext);
 
-
-    // useEffect(()=>{
-    //   localStorage.setItem("cartitems",JSON.stringify(cartItems));
-    //  },[cartItems])
-    
-    //  useEffect(()=>{
-    //    let storedCartItems = JSON.parse(localStorage.getItem('cartitems'));
-    //    if (storedCartItems) {
-    //      setCartItems((prev)=>{
-    //       return{...prev, storedCartItems}
-    //      });
-    //   //  console.log(storedCartItems);
-    //   //  console.log(storedCartItems);
-
-    //    }
-    //  }, []);
-
-    // console.log(cartItems)
-
-    // useEffect(()=>{
-    //   let carts =  localStorage.getItem()
-    // })
   return (
     <div className="prod-card">
       <div className="prod-img">

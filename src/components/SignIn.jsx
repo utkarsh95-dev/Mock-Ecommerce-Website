@@ -19,6 +19,8 @@ const initialValues = {
   password:"",
 }
 const SignIn = () => {
+
+  
   // useEffect(() => {
   //   if (loggedIn) {
   //     // Update cartItems in localStorage whenever loggedIn changes
@@ -33,16 +35,18 @@ const SignIn = () => {
             UserInfo.map((user)=>{
               // console.log(user)
               if(user.name === values.name && user.email === values.email && user.password === values.password){
-                console.log(`name:${user.name}, email:${user.email}, pass:${user.password}`)
+                // console.log(`name:${user.name}, email:${user.email}, pass:${user.password}`)
                 setAccount({
                   name: values.name,
                   email: values.email,
                   password: values.password,
                 })
                 setLoggedIn(true);
+                // console.log(loggedIn);
                 setOpenModal(true);
-                 localStorage.setItem("user", JSON.stringify(account));
-                 localStorage.setItem("isloggedin",JSON.stringify(loggedIn));
+                //  localStorage.setItem("user", JSON.stringify(account));
+                //  localStorage.setItem("isloggedin",JSON.stringify(loggedIn));
+                //  console.log(account);
 
                 return;
               }   
@@ -54,7 +58,13 @@ const SignIn = () => {
             })           
             action.resetForm();
           }})
-  
+          useEffect(()=>{
+            window.localStorage.setItem("loggedIn",loggedIn);
+          },[loggedIn]);
+
+          useEffect(()=>{
+            window.localStorage.setItem("user",JSON.stringify(account));
+          })
   
   return (
     <>

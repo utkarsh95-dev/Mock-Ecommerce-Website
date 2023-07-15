@@ -38,17 +38,17 @@ val = value();
         <Link to="/intro"><img src={Logo} alt="Logo" id="nav2-logo" /></Link>
         <div className="nav2-options">
         <div className="sub-sub">
-          <Link to="/" style={{fontSize:"13px"}} >HELP <HeadphonesIcon sx={{fontSize:"18px",marginLeft:"5px"}} /></Link>
+          <Link to="/" style={{fontSize:"13px"}} >HELP<HeadphonesIcon sx={{fontSize:"18px",marginLeft:"5px"}} /></Link>
         </div>
         <div className="sub-sub">
-          <Link to="/shop" style={{fontSize:"13px"}} >SHOP <StoreIcon sx={{fontSize:"22px",marginLeft:"5px"}}/></Link>
+          <Link to="/shop" style={{fontSize:"13px"}} >SHOP<StoreIcon sx={{fontSize:"22px",marginLeft:"5px"}}/></Link>
         </div>
         <div className="sub-sub">
-          <Link to="/cart" style={{fontSize:"13px"}}>CART <div className={val? "joy dotted": "joy"}><ShoppingCartCheckoutIcon sx={{fontSize:"19px",marginLeft:"5px"}} /></div></Link>
+          <Link to="/cart" style={{fontSize:"13px"}}>CART<div className={val? "joy dotted": "joy"}><ShoppingCartCheckoutIcon sx={{fontSize:"19px",marginLeft:"5px"}} /></div></Link>
         </div>
         <div className="nav2-options-drop">
           <div className="sub">
-            <h2 style={{fontSize:"13px"}}>PRODUCTS <ExpandMoreIcon/></h2>
+            <h2 style={{fontSize:"13px"}}>PRODUCTS<ExpandMoreIcon/></h2>
           </div>
           <div className="nav2-options-drop-sub">
             <span> <Link to="/signup">Delivery Agents</Link> </span>
