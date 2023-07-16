@@ -79,10 +79,10 @@ const Profile = () => {
            </div>
             
           </div>
-          <div className={`pro-main-three ${selectItem === "my-manage-acc" ? "activated" : ""}`} >marchod</div>
-          <div className={`pro-main-four ${selectItem === "my-wallet" ? "activated" : ""}`} >bhosikda</div>
-          <div className={`pro-main-five ${selectItem === "my-address" ? "activated" : ""}`} >bhenkalund</div>
-          <div className={`pro-main-six ${selectItem === "my-wishlist" ? "activated" : ""}`} >chutiya</div>
+          <div className={`pro-main-three ${selectItem === "my-manage-acc" ? "activated" : ""}`} ></div>
+          <div className={`pro-main-four ${selectItem === "my-wallet" ? "activated" : ""}`} ></div>
+          <div className={`pro-main-five ${selectItem === "my-address" ? "activated" : ""}`} ></div>
+          <div className={`pro-main-six ${selectItem === "my-wishlist" ? "activated" : ""}`} ></div>
         </div>
       </div>
     </div>
